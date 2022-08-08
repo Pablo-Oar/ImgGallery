@@ -10,6 +10,8 @@
 
 body{
     font-family: var(--poppins);
+    background-image: url("../imgs/background.jpg");
+    background-size: cover;
 }
 
 
@@ -18,8 +20,9 @@ main
         font-size: 35px;
         padding: 10px 0;
         text-align: center;
+        color: #fff;
         &:hover{
-            color: rgb(18, 73, 175);
+            color: #5b40f3a6;
         }
     }
     .gallery__container{
@@ -38,6 +41,7 @@ main
         gap: 5px;
 
         .gallery__picture{
+            border-radius: 5px;
             position: relative;
             cursor: pointer;
             overflow: hidden;
@@ -74,7 +78,7 @@ main
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 1rem;
+                font-size: .9rem;
                 color: rgb(255, 255, 255);
                 opacity: 0;
                 transition: .4s;

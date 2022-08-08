@@ -7,16 +7,19 @@
   --poppins: 'Poppins', sans-serif; }
 
 body {
-  font-family: var(--poppins); }
+  font-family: var(--poppins);
+  background-image: url("../imgs/background.jpg");
+  background-size: cover; }
 
 main
 .title {
   font-size: 35px;
   padding: 10px 0;
-  text-align: center; }
+  text-align: center;
+  color: #fff; }
   main
   .title:hover {
-    color: #1249af; }
+    color: #5b40f3a6; }
 
 .gallery__container {
   display: grid;
@@ -26,6 +29,7 @@ main
   grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img4" "img5 img5 img5 img6" "img5 img5 img5 img6" "img5 img5 img5 img6" "img7 img7 img8 img8" "img7 img7 img8 img8";
   gap: 5px; }
   .gallery__container .gallery__picture {
+    border-radius: 5px;
     position: relative;
     cursor: pointer;
     overflow: hidden; }
@@ -59,7 +63,7 @@ main
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1rem;
+      font-size: .9rem;
       color: white;
       opacity: 0;
       transition: .4s; }
