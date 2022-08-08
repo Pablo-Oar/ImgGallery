@@ -33,9 +33,9 @@ main
         grid-template-areas: 
         "img1 img1 img2 img3"
         "img1 img1 img4 img4"
-        "img5 img5 img5 img6"
-        "img5 img5 img5 img6"
-        "img5 img5 img5 img6"
+        "img5 img5 img6 img6"
+        "img5 img5 img6 img6"
+        "img5 img5 img6 img6"
         "img7 img7 img8 img8"
         "img7 img7 img8 img8";
         gap: 5px;
@@ -112,5 +112,34 @@ main
         .gallery__picture--8{
             grid-area: img8;
         }
+}
+
+@media (max-width:767px) {
+    main{
+        .gallery__container{
+            grid-template-areas: 
+            "img1 img1 img1 img1"
+            "img1 img1 img1 img1"
+            "img2 img2 img2 img2"
+            "img2 img2 img2 img2"
+            "img3 img3 img3 img3"
+            "img3 img3 img3 img3"
+            "img4 img4 img4 img4"
+            "img4 img4 img4 img4"
+            "img5 img5 img5 img5"
+            "img5 img5 img5 img5"
+            "img6 img6 img6 img6"
+            "img6 img6 img6 img6"
+            "img7 img7 img7 img7"
+            "img7 img7 img7 img7"
+            "img8 img8 img8 img8"
+            "img8 img8 img8 img8";
+            .gallery__picture{
+                .gallery__paragraph{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
 }
 
