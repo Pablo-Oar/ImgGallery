@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  --poppins: 'Poppins', sans-serif; }
+
+body {
+  font-family: var(--poppins); }
+
+/*# sourceMappingURL=estilos.css.map */
