@@ -13,27 +13,53 @@ body{
 }
 
 
-h2{
-    font-size: 35px;
-    padding: 10px 0;
-    text-align: center;
-}
-
-main .gallery__container{
-    display: grid;
-    padding: 15px 0;
-    grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: 180px;
-    grid-template-areas: 
-    "img1 img1 img2 img3"
-    "img1 img1 img4 img4"
-    "img5 img5 img5 img6"
-    "img5 img5 img5 img6"
-    "img5 img5 img5 img6"
-    "img7 img7 img8 img8";
-    gap: 15px;
+main 
+    .title{
+        font-size: 35px;
+        padding: 10px 0;
+        text-align: center;
+        &:hover{
+            color: rgb(18, 73, 175);
+        }
+    }
+    .gallery__container{
+        display: grid;
+        padding: 25px 15px;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: 180px;
+        grid-template-areas: 
+        "img1 img1 img2 img3"
+        "img1 img1 img4 img4"
+        "img5 img5 img5 img6"
+        "img5 img5 img5 img6"
+        "img5 img5 img5 img6"
+        "img7 img7 img8 img8"
+        "img7 img7 img8 img8";
+        gap: 5px;
 
         .gallery__picture{
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            &::before{
+                content: "Picture";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #5b40f3a6;
+                transform: scale(0);
+                transition: transform .4s;
+                color:#fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+            }
+            &:hover::before{
+                transform: scale(1) rotate(360deg);
+            }
             .gallery__img{
                 width: 100%;
                 height: 100%;
@@ -64,6 +90,5 @@ main .gallery__container{
         .gallery__picture--8{
             grid-area: img8;
         }
-        
 }
 
